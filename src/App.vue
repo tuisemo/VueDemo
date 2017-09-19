@@ -5,7 +5,6 @@
     <home></home>
   </div>
 </template>
-
 <script>
 import home from './components/home.vue'
 
@@ -13,8 +12,8 @@ export default {
   name: 'app',
   components: { home }
 }
-</script>
 
+</script>
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -24,4 +23,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>

@@ -2,16 +2,16 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view></router-view>
-    <search></search>
+    <record></record>
   </div>
 </template>
 
 <script>
-import search from './components/search.vue'
+import record from './components/record.vue'
 export default {
   name: 'app',
   components: {
-    search
+    record
   }
 }
 </script>

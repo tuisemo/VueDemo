@@ -19,15 +19,24 @@ export default {
       something: ''
     }
   },
+  created: function () {
+    // 初始化实例后，从本地读取记录
+    this.myRecord = JSON.parse(localStorage.getItem('record')) || []
+  },
   methods: {
     add: function () {
       this.myRecord.push(this.something)
+      this.changeLocal()
       // 清空当前记录
       this.something = ''
     },
     del: function (index) {
       // splice方法，删除/添加项目
       this.myRecord.splice(index, 1)
+      this.changeLocal()
+    },
+    changeLocal: function () {
+      localStorage.setItem('record', JSON.stringify(this.myRecord))
     }
 
   }

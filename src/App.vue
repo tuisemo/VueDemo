@@ -3,15 +3,18 @@
     <img src="./assets/logo.png">
     <router-view></router-view>
     <record></record>
+    <datafrom></datafrom>
   </div>
 </template>
 
 <script>
 import record from './components/record.vue'
+import form from './components/form.vue'
 export default {
   name: 'app',
   components: {
-    record
+    'record': record,
+    'dataform': form
   }
 }
 </script>

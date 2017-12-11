@@ -10,6 +10,24 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: Hello
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: {
+      	template:`
+      	<div>
+      	<h1>关于我们</h1>
+      	</div>
+      	`
+      }
+      children:[
+      {
+      	path:'/'
+      }
+      ]
+
+      }
     }
   ]
 })
